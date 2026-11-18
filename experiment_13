@@ -1,0 +1,11 @@
+clc;
+clear;
+
+file = mopen("data.txt", "rt");
+
+while ~meof(file)
+    line = mgetl(file);
+    disp(line);
+end
+
+mclose(file);
