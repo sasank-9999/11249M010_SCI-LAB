@@ -1,0 +1,16 @@
+clc;
+clear;
+
+name = "Ravi";
+age = 20;
+mark = 85;
+
+file = mopen("student.txt", "wt");
+
+mfprintf(file, "Student Name: %s\n", name);
+mfprintf(file, "Age: %d\n", age);
+mfprintf(file, "Mark: %d\n", mark);
+
+mclose(file);
+
+disp("Data written successfully.");
